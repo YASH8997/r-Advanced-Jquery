@@ -1,5 +1,7 @@
 $(document).ready(()=>{
-    getalldata();
+    $('#call').click(()=>{
+        getalldata();
+    });
 });
 
 let getalldata = () =>{
@@ -14,25 +16,26 @@ $.ajax({
     success : (data)=>
     {
         console.log('data',data)   
-        //  $("#Title").append(data.Title);
-        //  $("#Year").append(data.Year);
-        //  $("#Rated").append(data.Rated);//Released
-        //  $("#Released").append(data.Released);//Runtime
-        //  $("#Runtime").append(data.Runtime);//Genre
-        //  $("#Genre").append(data.Genre);//Director
-        //  $("#Director").append(data.Director);//Writer
-        //  $("#Writer").append(data.Writer);//Actors
-        //  $("#Actors").append(data.Actors);//Plot
-        //  $("#Plot").append(data.Plot);//Language
-        //  $("#Language").append(data.Language);//Country
-        //  $("#Country").append(data.Country);//Awards
-        //  $("#Awards").append(data.Awards);//Ratings
-        //  $("#Ratings").append(data.Ratings[0].Source +"<br> Value = "+data.Ratings[0].Value+'<br>' );
-        //  $("#Ratings").append(data.Ratings[1].Source +"<br> Value = "+data.Ratings[1].Value +'<br>' );
-        //  $("#Ratings").append(data.Ratings[2].Source +"<br> Value = "+data.Ratings[2].Value +'<br>' );
-        //  $("#Metascore").append(data.Metascore);//imdbRating"
-        //  $("#imdbRating").append(data.imdbRating);
-        //  $("#imdbVotes").append(data.imdbVotes);
+        $("#showdata").append(data+'<br>');
+        $("#showdata").append(data.Title+'<br>');
+        $("#showdata").append(data.Year+'<br>');
+        $("#showdata").append(data.Rated+'<br>');//Released
+        $("#showdata").append(data.Released+'<br>');//Runtime
+        $("#showdata").append(data.Runtime+'<br>');//Genre
+        $("#showdata").append(data.Genre+'<br>');//Director
+        $("#showdata") .append(data.Director+'<br>');//Writer
+        $("#showdata").append(data.Writer+'<br>');//Actors
+        $("#showdata").append(data.Actors+'<br>');//Plot
+        $("#showdata").append(data.Plot+'<br>');//Language
+        $("#showdata").append(data.Language+'<br>');//Country
+        $("#showdata").append(data.Country+'<br>');//Awards
+        $("#showdata").append(data.Awards+'<br>');//Ratings
+        $("#showdata").append(data.Ratings[0].Source +"<br> Value = "+data.Ratings[0].Value+'<br>' );
+        $("#showdata").append(data.Ratings[1].Source +"<br> Value = "+data.Ratings[1].Value +'<br>' );
+        $("#showdata").append(data.Ratings[2].Source +"<br> Value = "+data.Ratings[2].Value +'<br>' );
+        $("#showdata").append(data.Metascore+'<br>');//imdbRating"
+        $("#showdata").append(data.imdbRating+'<br>');
+        $("#showdata").append(data.imdbVotes+'<br>');
         
     },
     error:(data)=>{
