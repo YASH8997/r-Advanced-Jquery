@@ -4,17 +4,265 @@
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=on">
         <title>
-            data
+        
+            covid19 Gujarat 
         </title>
         <script  src="jquery-3.5.0.min.js"></script>
         <script  src="index.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       
     </head>
-        <button id="call"> Get data</button>
-        <div id="showdata">
+
+
+
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">distric</th>
+                    <th scope="col">active</th>
+                    <th scope="col">confirmed</th>
+                    <th scope="col">detha</th>
+                    <th scope="col">recovered</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Ahmadabad</th>
+                    <td id="aha"></td>
+                    <td id="ahc"></td>
+                    <td id="ahd"></td>
+                    <td id="ahr"></td>
+                  </tr>
+                  <tr>
+                    <th>Anand</th>
+                    <td id="aa"></td>
+                    <td id="ac"></td>
+                    <td id="ad"></td>
+                    <td id="ar"></td>
+                  </tr>
+                  <tr>
+                  <th>Aravalli</th>
+                  <td id="ara"></td>
+                  <td id="arc"></td>
+                  <td id="ard"></td>
+                  <td id="arr"></td>
+                </tr>
+                <tr>
+                <th>Banaskantha</th>
+                  <td id="ba"></td>
+                  <td id="bc"></td>
+                  <td id="bd"></td>
+                  <td id="br"></td>
+                </tr>
+                <tr>
+                <th>Kutch</th>
+                  <td id="ka"></td>
+                  <td id="kc"></td>
+                  <td id="kd"></td>
+                  <td id="kr"></td>
+                </tr>
+                <tr>
+                <th>Mehsana</th>
+                  <td id="ma"></td>
+                  <td id="mc"></td>
+                  <td id="md"></td>
+                  <td id="mr"></td>
+                </tr>
+                <tr>
+                <th>Panchmahal</th>
+                <td id="pa"></td>
+                <td id="pc"></td>
+                <td id="pd"></td>
+                <td id="pr"></td>
+              </tr>
+              <tr>
+                <th>Junagadh</th>
+                <td id="ja"></td>
+                <td id="jc"></td>
+                <td id="jd"></td>
+                <td id="jr"></td>
+              </tr>
+              <tr>
+                <th>Sabarkantha</th>
+                <td id="sa"></td>
+                <td id="sc"></td>
+                <td id="sd"></td>
+                <td id="sr"></td>
+              </tr>
+              <tr>
+                <th>Surat</th>
+                <td id="sua"></td>
+                <td id="suc"></td>
+                <td id="sud"></td>
+                <td id="sur"></td>
+              </tr>
+              <tr>
+                <th>Vadodara</th>
+                <td id="va"></td>
+                <td id="vc"></td>
+                <td id="vd"></td>
+                <td id="vr"></td>
+              </tr>
+              <tr>
+                <th>Gandhinagar</th>
+                <td id="ga"></td>
+                <td id="gc"></td>
+                <td id="gd"></td>
+                <td id="gr"></td>
+              </tr>
+
+              <tr>
+                <th>Bharuch</th>
+                <td id="bha"></td>
+                <td id="bhc"></td>
+                <td id="bhd"></td>
+                <td id="bhr"></td>
+              </tr>
+              <tr>
+                <th>Bhavnagar</th>
+                <td id="bhaa"></td>
+                <td id="bhac"></td>
+                <td id="bhad"></td>
+                <td id="bhar"></td>
+              </tr>
+              <tr>
+                <th>botad</th>
+                <td id="boa"></td>
+                <td id="boc"></td>
+                <td id="bod"></td>
+                <td id="bor"></td>
+              </tr>
+              <tr>
+                <th>Dahod</th>
+                <td id="da"></td>
+                <td id="dc"></td>
+                <td id="dd"></td>
+                <td id="dr"></td>
+              </tr>
+              <tr>
+                <th>dang</th>
+                <td id="daa"></td>
+                <td id="dac"></td>
+                <td id="dad"></td>
+                <td id="dar"></td>
+              </tr>
+              <tr>
+                <th>jamnagar</th>
+                <td id="jaa"></td>
+                <td id="jac"></td>
+                <td id="jad"></td>
+                <td id="jar"></td>
+              </tr>
+              <tr>
+                <th>Kheda</th>
+                <td id="kha"></td>
+                <td id="khc"></td>
+                <td id="khd"></td>
+                <td id="khr"></td>
+              </tr>
+              <tr>
+                <th>Mahisagar</th>
+                <td id="maa"></td>
+                <td id="mac"></td>
+                <td id="mad"></td>
+                <td id="mar"></td>
+              </tr>
+              <tr>
+                <th>morbi</th>
+                <td id="moa"></td>
+                <td id="moc"></td>
+                <td id="mod"></td>
+                <td id="mor"></td>
+              </tr>
+              <tr>
+                <th>Narmada</th>
+                <td id="na"></td>
+                <td id="nc"></td>
+                <td id="nd"></td>
+                <td id="nr"></td>
+              </tr>
+              <tr>
+                <th>Navsari</th>
+                <td id="naa"></td>
+                <td id="nac"></td>
+                <td id="nad"></td>
+                <td id="nar"></td>
+              </tr>
+              <tr>
+                <th>patan</th>
+                <td id="paa"></td>
+                <td id="pac"></td>
+                <td id="pad"></td>
+                <td id="par"></td>
+              </tr>
+              <tr>
+                <th>Porbandar</th>
+                <td id="poa"></td>
+                <td id="poc"></td>
+                <td id="pod"></td>
+                <td id="por"></td>
+              </tr>
+              <tr>
+                <th>Rajkot</th>
+                <td id="ra"></td>
+                <td id="rc"></td>
+                <td id="rd"></td>
+                <td id="rr"></td>
+              </tr>
+              <tr>
+                <th>Surendranagar</th>
+                <td id="sura"></td>
+                <td id="surc"></td>
+                <td id="surd"></td>
+                <td id="surr"></td>
+              </tr>
+              <tr>
+                <th>tapi</th>
+                <td id="ta"></td>
+                <td id="tc"></td>
+                <td id="td"></td>
+                <td id="tr"></td>
+              </tr>
+              <tr>
+                <th>valsad</th>
+                <td id="vaa"></td>
+                <td id="vac"></td>
+                <td id="vad"></td>
+                <td id="var"></td>
+              </tr>
+              <tr>
+                <th>Chhota Udaipur</th>
+                <td id="cua"></td>
+                <td id="cuc"></td>
+                <td id="cud"></td>
+                <td id="cur"></td>
+              </tr>
+              <tr>
+                <th>Devbhumi Dwarka</th>
+                <td id="dda"></td>
+                <td id="ddc"></td>
+                <td id="ddd"></td>
+                <td id="ddr"></td>
+              </tr>
+              
+              <tr>
+                <th>Gir Somnath</th>
+                <td id="gsa"></td>
+                <td id="gsc"></td>
+                <td id="gsd"></td>
+                <td id="gsr"></td>
+              </tr>
+              
+
+
+
+                </tbody>
+              </table>
 
         </div>
    
+
+        
     <body>
 
     </body>
